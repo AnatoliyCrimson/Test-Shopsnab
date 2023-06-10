@@ -1,9 +1,15 @@
-import logo from './logo.svg';
+import React from 'react';
+//import logo from './logo.svg';
 import './App.css';
+import { Button } from 'react-bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
   return (
-    <h1>awd</h1>
+    <div>
+      <h1>awd</h1>
+      <Button variant="primary">Button</Button>
+    </div>
   );
 }
 
