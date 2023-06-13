@@ -1,0 +1,13 @@
+.container {
+    max-width: 1600px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.header-backgroung {
+    width: 1600px;
+    height: 735px;
+    margin-left: auto;
+    margin-right: auto;
+    /*background-image: url(/public/header-img.jpg);*/
+}

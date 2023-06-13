@@ -1,15 +1,19 @@
 import React from 'react';
-//import logo from './logo.svg';
-import './App.css';
-import { Button } from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
-
+import './styles/App.css'
+import Header from './components/header';
+import Hero from './components/hero';
+ 
 function App() {
   return (
-    <div>
-      <h1>awd</h1>
-      <Button variant="primary">Button</Button>
-    </div>
+    <>
+      <div className='header-backgroung'>
+        <Header />
+        <main>
+          <Hero />
+        </main>
+      </div>
+    </>
   );
 }
 
