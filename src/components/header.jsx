@@ -4,16 +4,16 @@ import '../styles/header.css'
 const Header = () => {
   return (
     <>
-      <header>
-        <div className="container">
-          <a href="/">
-            <span>Shopsnab</span> 
-            <span>интернет-магазин + поставщики</span>
+      <header className='header'>
+        <div className="container header__container">
+          <a href="/" className='header__logo logo'>
+            <span className='logo__title'>Shopsnab</span> 
+            <span className='logo__descr'>интернет-магазин + поставщики</span>
           </a>
-          <a href="/">
-            Все мегазины
+          <a href="/" className='header__burger'>
+            Все магазины
           </a>
-          <a href="tel:+78005670009">
+          <a href="tel:+78005670009" className='number header__number'>
             8-800-567-00-09
           </a>
         </div>
