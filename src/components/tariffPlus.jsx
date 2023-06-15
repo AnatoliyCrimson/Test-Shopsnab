@@ -6,9 +6,9 @@ const TariffPlus = () => {
     <>
       <section className='plus'>
         <div className="container plus__container">
-          <h1 className="plus__title">
+          <h2 className="plus__title">
             Тариф Plus
-          </h1>
+          </h2>
           <div className='plus__info'>
             <div className="plus__store store">
               <img src="/" alt="Тариф Start" className="store__img" />
@@ -52,10 +52,12 @@ const TariffPlus = () => {
               </div>
             </div>
             <div className="plus__form form">
-              ТУТ СДЕЛАТЬ ФОРМУ
-              <a href="/" className="btn form__btn">
-                Отправить
-              </a>
+              <form action="https://jsonplaceholder.typicode.com/posts" className="form" method="POST">
+                <input type="text" name="First-Name" className="form__first-name" placeholder="Имя" required />
+                <input type="tel" name="Phone" className="form__tel" placeholder="+7 (000) 000-00-00" required />
+                <input type="e-mail" name="E-mail" className="form__e-mail" placeholder="E-mail" required />
+                <button type="submit" className="form__btn">Отправить</button>
+              </form>
             </div>
           </div>
         </div>

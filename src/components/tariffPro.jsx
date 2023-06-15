@@ -6,9 +6,9 @@ const TariffPro = () => {
     <>
       <section className='pro'>
         <div className="container pro__container">
-          <h1 className="pro__title">
+          <h2 className="pro__title">
             Тариф Pro
-          </h1>
+          </h2>
           <div className='pro__info'>
             <div className="pro__store store">
               <img src="/" alt="Реклама" className="store__img" />

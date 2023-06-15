@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './styles/App.css'
 import Header from './components/header';
@@ -9,8 +10,11 @@ import Provider from './components/provider';
 import TariffStart from './components/tariffStart';
 import TariffPlus from './components/tariffPlus';
 import TariffPro from './components/tariffPro';
-import StartBuisness from './components/startBuisness';
+import StartBusiness from './components/startBusiness';
 import Footer from './components/footer';
+import QuestionsForm from './components/questionsForm';
+import BusinessFor from './components/businessFor';
+import Questions from './components/questions';
 
  
 function App() {
@@ -27,9 +31,13 @@ function App() {
         <TariffStart />
         <TariffPlus />
         <TariffPro />
-        <StartBuisness />
+        <QuestionsForm />
+        <Router>
+          <BusinessFor />
+        </Router>
+        <StartBusiness />
+        <Questions />
         <Footer />
-
       </main>
     </>
   );
@@ -45,7 +53,7 @@ import '../styles/.css'
 const  = () => {
   return (
     <>
-      <section className=''>
+      <section className="">
         <div className="container">
           
         </div>
@@ -54,7 +62,7 @@ const  = () => {
   )
 }
 
-export default ; 
+export default ;
 
 
 */
