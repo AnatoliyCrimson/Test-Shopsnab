@@ -1,12 +1,12 @@
 import React from 'react'
-import '../styles/startBusiness.css'
+import '../css/startBusiness.css'
 
 const StartBusiness = () => {
   return (
     <>
       <section className='start-business'>
         <div className="container start-business__container">
-          <h2 className="start-business-title">
+          <h2 className="title start-business__title">
             Как запустить бизнес?
           </h2>
           <ul className="start-business__columns">

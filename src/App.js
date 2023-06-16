@@ -1,7 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import './styles/App.css'
+import './css/global.css'
+import './css/App.css'
 import Header from './components/header';
 import Hero from './components/hero';
 import Adv from './components/adv';
@@ -16,16 +17,16 @@ import QuestionsForm from './components/questionsForm';
 import BusinessFor from './components/businessFor';
 import Questions from './components/questions';
 
- 
+
 function App() {
   return (
     <>
-      <div className='header-backgroung'>
+      <div className='header-hero-backgroung'>
         <Header />
-      </div>
-      <main>
         <Hero />
-        <Adv />
+      </div>
+      <Adv />
+      <main>
         <Estore />
         <Provider />
         <TariffStart />
@@ -45,7 +46,7 @@ function App() {
 
 export default App;
 
-/* 
+/*
 
 import React from 'react'
 import '../styles/.css'

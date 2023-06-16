@@ -1,15 +1,15 @@
 import React from 'react'
-import '../styles/tariffStart.css'
+import '../css/tariffStart.css'
 
 const TariffStart = () => {
   return (
     <>
       <section className='start'>
         <div className="container start__container">
-          <h2 className="start__title">
+          <h2 className="title start__title">
             Тариф Start
           </h2>
-          <div className='start__info'>
+          <div className="start__info">
             <div className="start__store store">
               <img src="/" alt="Интернет-магазин" className="store__img" />
               <div className="store__text">

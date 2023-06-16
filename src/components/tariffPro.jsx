@@ -1,12 +1,12 @@
 import React from 'react'
-import '../styles/tariffPro.css'
+import '../css/tariffPro.css'
 
 const TariffPro = () => {
   return (
     <>
       <section className='pro'>
         <div className="container pro__container">
-          <h2 className="pro__title">
+          <h2 className="title pro__title">
             Тариф Pro
           </h2>
           <div className='pro__info'>

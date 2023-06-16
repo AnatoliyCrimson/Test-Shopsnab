@@ -1,0 +1,51 @@
+.hero__container {
+  color: #fff;
+  padding-top: 112px;
+}
+
+.hero__top {
+  margin-bottom: 172px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__btns {
+  width: 334px;
+}
+
+.hero__descr {
+  width: 655px;
+  font-size: 20px;
+}
+
+.hero__btn_opacity {
+  margin-bottom: 25px;
+  background-color: #1299A2;
+}
+
+.hero__btn {
+  width: 334px;
+  height: 58px;
+  padding: 15px 28px;
+  border: 1px solid #1299A1;
+}
+
+.hero__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__column {
+  max-width: 257px;
+}
+
+.hero__up-item {
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 6px;
+}
+
+.hero__down-item {
+  font-size: 20px;
+  font-weight: 600;
+}

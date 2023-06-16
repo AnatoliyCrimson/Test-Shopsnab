@@ -1,48 +1,70 @@
 import React from 'react'
-import '../styles/hero.css'
+import '../css/hero.css'
 
 const Hero = () => {
   return (
     <>
       <section className='hero'>
         <div className="container hero__container">
-          <div className='hero__info'>
-            <h1 className='hero__title'>
-              Интернет-магазин диванов 
-            </h1>
-            <ul className='hero_descr'>
-              <li className='hero__li'>
-                Откроем и раскрутим магазин под ваш регион
-              </li>
-              <li className='hero__li'>
-                Отличные условия от поставщика, закупка товара не требуется!
-              </li>
-              <li className='hero__li'>
-                Ваш заработок на продаже диванов составит 1 400 00 руб в год (указана средняя прибыль)
-              </li>
-            </ul>
+          <div className="hero__top">
+            <div className='hero__title-text'>
+              <h1 className='title hero__title'>
+                Интернет-магазин диванов 
+              </h1>
+              <ul className='hero__descr'>
+                <li className='hero__li'>
+                  Откроем и раскрутим магазин под ваш регион
+                </li>
+                <li className='hero__li'>
+                  Отличные условия от поставщика, закупка товара не требуется!
+                </li>
+                <li className='hero__li'>
+                  Ваш заработок на продаже диванов составит 1 400 00 руб в год (указана средняя прибыль)
+                </li>
+              </ul>
+            </div>
+            <div className="hero__btns">
+              <a href="/" className='btn hero__btn hero__btn_opacity'>
+                Онлайн-демо магазина
+              </a>
+              <a href="/" className='btn hero__btn'>
+                Расчет прибыли для вашего города
+              </a>
+            </div>
           </div>
-          <div>
-            <a href="/" className='btn hero__btn '>
-              Онлайн-демо магазина
-            </a>
-            <a href="/" className='btn hero__btn hero__btn_transparent'>
-              Расчет прибыли для вашего города
-            </a>
-          </div>
-          <div className='hero__info'>
-            <p className='hero__paragraph'>
-              СКОЛЬКО <span className='hero__span'>3-5 рабочих дней</span>
-            </p>
-            <p className='hero__paragraph'>
-              ПРИБЫЛЬ <span className='hero__span'>от 90 000 до 230 000 рублей в месяц</span>
-            </p>
-            <p className='hero__paragraph'>
-              ЧТО ВЫ ПОЛУЧИТЕ <span className='hero__span'>интернет-магазин + поставщики + продвижение</span>
-            </p>
-            <p className='hero__paragraph'>
-              КОМПЛЕКТ ВКЛЮЧАЕТ <span className='hero__span'>хостинг, домен, поддержка</span>
-            </p>
+          <div className='hero__bottom'>
+            <div className='hero__column'>
+              <p className='hero__up-item'>
+                СКОЛЬКО 
+              </p>
+              <p className='hero__down-item'>
+                3-5 рабочих дней
+              </p>
+            </div>
+            <div className='hero__column'>
+              <p className='hero__up-item'>
+                ПРИБЫЛЬ 
+              </p>
+              <p className='hero__down-item'>
+                от 90 000 до 230 000 рублей в месяц
+              </p>
+            </div>
+            <div className='hero__column'>
+              <p className='hero__up-item'>
+                ЧТО ВЫ ПОЛУЧИТЕ 
+              </p>
+              <p className='hero__down-item'>
+                интернет-магазин + поставщики + продвижение
+              </p>
+            </div>
+            <div className='hero__column'>
+              <p className='hero__up-item'>
+                КОМПЛЕКТ ВКЛЮЧАЕТ 
+              </p>
+              <p className='hero__down-item'>
+                хостинг, домен, поддержка
+              </p>
+            </div>
           </div>
         </div>
       </section>

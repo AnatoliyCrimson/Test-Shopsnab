@@ -1,12 +1,12 @@
 import React from 'react'
-import '../styles/eStore.css'
+import '../css/eStore.css'
 
 const Estore = () => {
   return (
     <>
       <section className='eStore'>
-        <div className="container">
-          <h2 className='eStore__title'>
+        <div className="container eStore__container">
+          <h2 className='title eStore__title'>
             Интернет-магазин
           </h2>
           <p className='eStore__descr'>
@@ -18,9 +18,9 @@ const Estore = () => {
                 <img src="/" alt="Seo оптимизация" className='cards__img cards__img_first'/>
                 <div className="cards__contfirst">
                   <img src="/" alt="Seo оптимизация" className='cards__img'/>
-                  <strong className='cards__title'>
+                  <h3 className='cards__title'>
                     Seo оптимизация
-                  </strong>
+                  </h3>
                   <p className='cards__descr'>
                     Ваш магазин будет полностью оптимизирован для автоматической индексации поисковиками
                   </p>
@@ -29,10 +29,10 @@ const Estore = () => {
             </li>
             <li className='cards__el'>
               <div className='cards__container'>
-                <img src="/" alt="Домае + Хостинг" className='cards__img'/>
-                <strong className='cards__title'>
+                <img src="/" alt="Доман + Хостинг" className='cards__img'/>
+                <h3 className='cards__title'>
                   Домен + Хостинг
-                </strong>
+                </h3>
                 <p className='cards__descr'>
                   Вы получаете в подарок домаен и хостинг на 12 месяцев
                 </p>
@@ -41,9 +41,9 @@ const Estore = () => {
             <li className='cards__el'>
               <div className='cards__container'>
                 <img src="/" alt="Адаптивность" className='cards__img'/>
-                <strong className='cards__title'>
+                <h3 className='cards__title'>
                   Мобильная версия
-                </strong>
+                </h3>
                 <p className='cards__descr'>
                   Ваш магазин будет отлично смотреться на смартфонах, планшетах и компьютерах
                 </p>
@@ -52,9 +52,9 @@ const Estore = () => {
             <li className='cards__el'>
               <div className='cards__container'>
                 <img src="/" alt="Инструкции" className='cards__img'/>
-                <strong className='cards__title'>
+                <h3 className='cards__title'>
                   Инструкции
-                </strong>
+                </h3>
                 <p className='cards__descr'>
                   Вы получите инструкции по работе с магазином. Все просто и понятно расписано и доступно каждому
                 </p>
@@ -63,9 +63,9 @@ const Estore = () => {
             <li className='cards__el'>
               <div className='cards__container'>
                 <img src="/" alt="Дизайн + Типографика" className='cards__img'/>
-                <strong className='cards__title'>
+                <h3 className='cards__title'>
                   Дизайн + Типографика
-                </strong>
+                </h3>
                 <p className='cards__descr'>
                   Удобная подача визуального контента. Мы отслеживаем тренды в дизайне, поэтому ваш магазин будет выглядеть актуально
                 </p>
@@ -74,9 +74,9 @@ const Estore = () => {
             <li className='cards__el'>
               <div className='cards__container'>
                 <img src="/" alt="Модули" className='cards__img'/>
-                <strong className='cards__title'>
+                <h3 className='cards__title'>
                   Модули
-                </strong>
+                </h3>
                 <p className='cards__descr'>
                   Делайте рассылки, собирайте обратную связь, подключайте системы управления данными клиентов (CRM)
                 </p>
@@ -86,9 +86,9 @@ const Estore = () => {
               <div className='cards__container cards__container_last'>
                 <div className="cards__contlast">
                   <img src="/" alt="Возможности" className='cards__img'/>
-                  <strong className='cards__title'>
+                  <h3 className='cards__title'>
                     Множество возможностей
-                  </strong>
+                  </h3>
                   <p className='cards__descr'>
                     Принимайте платежи любым способом: наличные, банковские карты, Яндекс.Касса, PayPal. Развивайте свой бизнес с помощью чатов, обратных звонков, рассылок
                   </p>

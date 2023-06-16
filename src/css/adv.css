@@ -1,0 +1,44 @@
+.advert__container {
+  background-color: #8C50B5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  height: 112px;
+}
+
+.advert__value {
+  width: 113px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 48px;
+}
+
+.advert__date {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.advert__title {
+  width: 537px;
+  font-size: 28px;
+  margin-bottom: 3px;
+}
+
+.advert__info {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 160%;
+}
+
+.advert__btn {
+  border: 1px solid #fff;
+  padding: 10px 50px;
+}

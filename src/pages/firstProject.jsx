@@ -1,10 +1,33 @@
 import React from 'react'
-import '../styles/firstProject.css'
+import { Link } from 'react-router-dom'
+import '../css/firstProject.css'
 
 const FirstProject = () => {
   return (
     <>
       <div className="first-project">
+        <ul className="worker__list list">
+            <li className="list__item">
+              <Link to="/" className="list__link list__link_active">
+                Наемным сотрудникам
+              </Link>
+            </li>
+            <li className="list__item">
+              <Link to="/businessman" className="list__link">
+                Предпринимателям и владельцам бизнеса
+              </Link>
+            </li>
+            <li className="list__item">
+              <Link to="/firstProject" className="list__link">
+                Тем, для кого это первый бизнес проектААА
+              </Link>
+            </li>
+            <li className="list__item">
+              <Link to="/specialist" className="list__link">
+                Специалистам смежных профессий
+              </Link>
+            </li>
+          </ul>
         <div className="first-project__content">
           <div className="first-project__text">
             <h3 className="first-project__title">

@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/questions.css'
+import '../css/questions.css'
 
 const Questions = () => {
   return (

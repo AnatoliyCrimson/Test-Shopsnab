@@ -1,12 +1,12 @@
 import React from 'react'
-import '../styles/questionsForm.css'
+import '../css/questionsForm.css'
 
 const QuestionsForm = () => {
   return (
     <>
       <section className="questionsForm">
         <div className="container questionsForm-container">
-          <h2>
+          <h2 className="title questionsForm__title">
             Есть вопросы? Оставьте заявку и мы свяжемся с вами в рбаочее время
           </h2>
           <div className="questionsForm__left left">

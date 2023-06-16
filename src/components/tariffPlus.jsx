@@ -1,12 +1,12 @@
 import React from 'react'
-import '../styles/tariffPlus.css'
+import '../css/tariffPlus.css'
 
 const TariffPlus = () => {
   return (
     <>
       <section className='plus'>
         <div className="container plus__container">
-          <h2 className="plus__title">
+          <h2 className="title plus__title">
             Тариф Plus
           </h2>
           <div className='plus__info'>

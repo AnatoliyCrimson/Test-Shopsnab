@@ -1,20 +1,20 @@
 import React from 'react'
-import { Routes, Route, Link } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import Worker from '../pages/worker'
 import Businessman from '../pages/businessman'
 import FirstProject from '../pages/firstProject'
 import Specialist from '../pages/specialist'
-import '../styles/businessFor.css'
+import '../css/businessFor.css'
 
 const BusinessFor = () => {
   return (
     <>
       <section className="business-for">
         <div className="container">
-          <h2 className="business-for__title">
+          <h2 className="title business-for__title">
             Для кого подойдет этот бизнес
           </h2>
-          <ul className="worker__list list">
+          {/* <ul className="worker__list list">
             <li className="list__item">
               <Link to="/" className="list__link list__link_active">
                 Наемным сотрудникам
@@ -35,7 +35,7 @@ const BusinessFor = () => {
                 Специалистам смежных профессий
               </Link>
             </li>
-          </ul>
+          </ul> */}
           <Routes>
             <Route exact path="/" element={<Worker />} />
             <Route exact path="/businessman" element={<Businessman />} />
