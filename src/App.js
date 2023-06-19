@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom'
-import 'bootstrap/dist/css/bootstrap.min.css'
 import './css/global.css'
 import './css/App.css'
 import Header from './components/header';

@@ -1,0 +1,33 @@
+.start__container {
+  padding-top: 109px;
+  padding-bottom: 134px;
+  background-color: #F7FAFC;
+}
+
+.start__title {
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.start__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 160px;
+}
+
+.start-right, .start-left {
+  display: flex;
+}
+
+.start-right__img, .start-left__img {
+  margin-right: 20px;
+}
+
+.start-right__title, .start-left__title {
+  margin-bottom: 14px;
+}
+
+.start-right__text, .start-left__text {
+  width: 300px;
+}

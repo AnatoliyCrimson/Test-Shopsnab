@@ -1,3 +1,55 @@
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Neris";
+  src: url("../fonts/Neris-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Neris";
+  src: url("../fonts/Neris-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Neris";
+  src: url("../fonts/Neris-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Neris";
+  src: url("../fonts/Neris-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -5,11 +57,16 @@
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 h1, h2, h3, p {
   margin: 0;
   line-height: 100%;
+}
+
+h1, h2, h3 {
+  font-family: "Ubuntu";
 }
 
 ul {
@@ -24,6 +81,8 @@ img {
 
 body {
   margin: 0;
+  font-family: "Neris";
+  font-style: normal;
 }
 
 .header-hero-backgroung {
@@ -35,7 +94,6 @@ body {
 }
 
 .container {
-  font-family: "Calibri";
   width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -45,18 +103,165 @@ body {
 
 .btn {
   color: #fff;
-  font-size: 17px;
   font-weight: 600;
+  font-size: 17px;
+  line-height: 27px;
   border-radius: 7px;
+}
+
+.number {
+  padding-left: 29px;
+  background-image: url(../assets/number-back.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .title {
   font-weight: 700;
   font-size: 50px;
+  line-height: 65px;
 }
 
 .container {
   max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.form-info {
+  color: white;
+  height: 258px;
+  background-color: #1299A2;
+  border-radius: 7px;
+}
+
+.form-info__text {
+  padding: 35px 60px 0 53px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form-info__title {
+  font-family: "Neris";
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 50px;
+  margin-bottom: 5px;
+}
+
+.form-info__descr {
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 37px;
+  margin-bottom: 27px;
+}
+
+.form-info__price {
+  margin-top: 9px;
+}
+
+.form-info__price-value {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 42px;
+}
+
+.form-info__prive-old {
+  padding-left: 13px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 21px;
+  text-decoration-line: line-through;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.form-info__discount {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.form {
+  height: 104px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 58px;
+}
+
+.form__input {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.74);
+  border-radius: 7px;
+  padding: 9px 16px;
+  width: 268px;
+  height: 41px;
+  color: rgba(255, 255, 255, 0.74);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form__input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.74);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form__input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.74);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form__input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.74);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form__input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.74);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form__input::placeholder {
+  color: rgba(255, 255, 255, 0.74);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form__input:focus {
+  outline: none;
+  border-color: #14E04D;
+}
+
+.form__btn {
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  padding: 6px 0 9px;
+  width: 198px;
+  border-radius: 7px;
+  border: none;
+  background-color: #FFCF23;
+}
+
+.form__btn:hover {
+  cursor: pointer;
+  background-color: #FFCB14;
 }

@@ -78,14 +78,20 @@ const Provider = () => {
               Вам осталось только ознакомиться с тарифами и выбрать свой путь развития
             </p>
             <ul className="tariffs__list">
-              <li className="tariffs__type">
-                Тариф Start
+              <li className="tariffs__item">
+                <a href="#tariff-start" className="tariffs__type">
+                  Тариф Start
+                </a>
               </li>
-              <li className="tariffs__type">
-                Тариф Plus
+              <li className="tariffs__item">
+                <a href="#tariff-plus" className="tariffs__type">
+                  Тариф Plus
+                </a>
               </li>
-              <li className="tariffs__type">
-                Тариф Pro
+              <li className="tariffs__item">
+                <a href="#tariff-pro" className="tariffs__type">
+                  Тариф Pro
+                </a>
               </li>
             </ul>
           </div>

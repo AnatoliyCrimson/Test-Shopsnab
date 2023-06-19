@@ -35,6 +35,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 134px;
 }
 
 .cards__el {
@@ -43,20 +44,63 @@
   height: 460px;
   border-radius: 9px;
   margin: 0 0 27px 0;
-  padding: 40px 40px 0;
+  padding: 0 40px;
+}
+
+.cards__img {
+  margin: 54px 0 5px;
 }
 
 .cards__el_first {
   width: 770px;
-  padding-left: 411px;
+  padding-top: 0;
+}
+
+.cards__container_first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.cards__contfirst {
+  min-width: 320px;
+}
+
+.cards__img_first {
+  margin: 101px 65px 0 0;
 }
 
 .cards__el_last {
   width: 770px;
-  padding-right: 350px;
+  padding-right: 0;
+  padding-top: 0;
+}
+
+.cards__container_last {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.cards__contlast {
+  min-width: 376px;
+}
+
+.cards__img_last {
+  margin: 105px 0 0 53px;
+  height: 245px;
 }
 
 .cards__title {
+  font-family: "Neris";
   font-weight: 600;
   font-size: 20px;
   line-height: 26px;
@@ -67,4 +111,10 @@
   font-weight: 300;
   font-size: 17px;
   line-height: 22px;
+  margin-bottom: 22px;
+}
+
+.cards__link {
+  color: #1299A2;
+  border-bottom: 1px solid #1299A2;
 }

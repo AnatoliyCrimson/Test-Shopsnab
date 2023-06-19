@@ -15,9 +15,8 @@ const Estore = () => {
           <ul className='eStore__cards cards'>
             <li className='cards__el cards__el_first'>
               <div className='cards__container cards__container_first'>
-                <img src="/" alt="Seo оптимизация" className='cards__img cards__img_first'/>
                 <div className="cards__contfirst">
-                  <img src="/" alt="Seo оптимизация" className='cards__img'/>
+                  <img src={ require("../assets/seo2.png") } alt="Seo оптимизация" className='cards__img'/>
                   <h3 className='cards__title'>
                     Seo оптимизация
                   </h3>
@@ -25,11 +24,12 @@ const Estore = () => {
                     Ваш магазин будет полностью оптимизирован для автоматической индексации поисковиками
                   </p>
                 </div>
+                <img src={ require("../assets/seo1.png") } alt="Seo оптимизация" className='cards__img cards__img_first'/>
               </div>
             </li>
             <li className='cards__el'>
               <div className='cards__container'>
-                <img src="/" alt="Доман + Хостинг" className='cards__img'/>
+                <img src={ require("../assets/domen.png") } alt="Доман + Хостинг" className='cards__img'/>
                 <h3 className='cards__title'>
                   Домен + Хостинг
                 </h3>
@@ -40,7 +40,7 @@ const Estore = () => {
             </li>
             <li className='cards__el'>
               <div className='cards__container'>
-                <img src="/" alt="Адаптивность" className='cards__img'/>
+                <img src={ require("../assets/mobile-version.png") } alt="Адаптивность" className='cards__img'/>
                 <h3 className='cards__title'>
                   Мобильная версия
                 </h3>
@@ -51,7 +51,7 @@ const Estore = () => {
             </li>
             <li className='cards__el'>
               <div className='cards__container'>
-                <img src="/" alt="Инструкции" className='cards__img'/>
+                <img src={ require("../assets/instruction.png") } alt="Инструкции" className='cards__img'/>
                 <h3 className='cards__title'>
                   Инструкции
                 </h3>
@@ -62,7 +62,7 @@ const Estore = () => {
             </li>
             <li className='cards__el'>
               <div className='cards__container'>
-                <img src="/" alt="Дизайн + Типографика" className='cards__img'/>
+                <img src={ require("../assets/design.png") } alt="Дизайн + Типографика" className='cards__img'/>
                 <h3 className='cards__title'>
                   Дизайн + Типографика
                 </h3>
@@ -73,7 +73,7 @@ const Estore = () => {
             </li>
             <li className='cards__el'>
               <div className='cards__container'>
-                <img src="/" alt="Модули" className='cards__img'/>
+                <img src={ require("../assets/moduls.png") } alt="Модули" className='cards__img'/>
                 <h3 className='cards__title'>
                   Модули
                 </h3>
@@ -85,18 +85,18 @@ const Estore = () => {
             <li className='cards__el cards__el_last'>
               <div className='cards__container cards__container_last'>
                 <div className="cards__contlast">
-                  <img src="/" alt="Возможности" className='cards__img'/>
+                  <img src={ require("../assets/opportunities1.png") } alt="Возможности" className='cards__img'/>
                   <h3 className='cards__title'>
                     Множество возможностей
                   </h3>
                   <p className='cards__descr'>
                     Принимайте платежи любым способом: наличные, банковские карты, Яндекс.Касса, PayPal. Развивайте свой бизнес с помощью чатов, обратных звонков, рассылок
                   </p>
-                  <a href="/">
+                  <a href="/" className="cards__link">
                     Посмотреть все возможности
                   </a>
                 </div>
-                <img src="/" alt="Возможности" className='cards__img cards__img_last'/>
+                <img src={ require("../assets/opportunities2.png") } alt="Возможности" className='cards__img cards__img_last'/>
               </div>
             </li>
           </ul>

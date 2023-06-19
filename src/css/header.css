@@ -1,4 +1,35 @@
 .header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 74px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.47);
+}
+
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__img {
+  margin-right: 68px;
+}
+
+.header__number {
+  color: white;
+  font-family: "Ubuntu";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  padding-left: 29px;
 }

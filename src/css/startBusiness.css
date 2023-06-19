@@ -1,0 +1,68 @@
+.start-business__container {
+  padding-top: 120px;
+  background-color: #F7FAFC;
+  padding-bottom: 128px;
+}
+
+.start-business__title {
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 65px;
+  margin-bottom: 90px;
+}
+
+.start-business__columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.start-business__column:nth-child(1) {
+  width: 219px;
+}
+
+.start-business__column:nth-child(2) {
+  width: 235px;
+}
+
+.start-business__column:nth-child(3) {
+  width: 289px;
+}
+
+.start-business__column:nth-child(4) {
+  width: 197px;
+}
+
+.start-business__img_first {
+  margin-bottom: 55px;
+}
+
+.start-business__img_second {
+  margin-bottom: 51px;
+}
+
+.start-business__img_third {
+  margin-bottom: 53px;
+}
+
+.start-business__img_fourth {
+  margin: 18px 0 61px;
+}
+
+.start-business__heading {
+  font-family: "Neris";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 31px;
+  margin-bottom: 21px;
+}
+
+.start-business__text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 21px;
+}

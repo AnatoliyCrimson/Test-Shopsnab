@@ -1,4 +1,25 @@
 .header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 74px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.47);
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+
+.header__img {
+  margin-right: 68px;
+}
+
+.header__number {
+  color: white;
+  font-family: 'Ubuntu';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  padding-left: 29px;
 }

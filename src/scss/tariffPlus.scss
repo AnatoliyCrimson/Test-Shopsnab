@@ -1,0 +1,32 @@
+.plus__container {
+  padding-top: 109px;
+  padding-bottom: 134px;
+}
+  
+.plus__title {
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.plus__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 160px;
+}
+
+.plus-right, .plus-left {
+  display: flex;
+}
+
+.plus-right__img, .plus-left__img {
+  margin-right: 20px;
+}
+
+.plus-right__title, .plus-left__title {
+  margin-bottom: 14px;
+}
+
+.plus-right__text, .plus-left__text {
+  width: 300px;
+}

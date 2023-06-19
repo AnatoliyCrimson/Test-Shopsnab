@@ -1,19 +1,21 @@
 import React from 'react'
+import Logo from '../assets/logo-footer.svg'
 import '../css/footer.css'
+
+
 
 const Footer = () => {
   return (
     <>
       <footer className="footer">
         <div className="container footer__container">
-          <a href="/" className='footer__logo logo'>
-            <span className='logo__title'>Shopsnab</span> 
-            <span className='logo__descr'>интернет-магазин + поставщики</span>
-          </a>
+          <a href="/">
+              <img src={Logo} alt="Поставщик" className="header__img" />
+            </a>
           <a href="tel:+78005670009" className="number footer__number">
             8-800-567-00-09
             <span className="footer__call-text">
-              бесплатно по росии
+              бесплатно по России
             </span>
           </a>
           <address>

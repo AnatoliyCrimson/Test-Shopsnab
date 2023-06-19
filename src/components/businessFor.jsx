@@ -10,32 +10,10 @@ const BusinessFor = () => {
   return (
     <>
       <section className="business-for">
-        <div className="container">
+        <div className="container business-for__container">
           <h2 className="title business-for__title">
             Для кого подойдет этот бизнес
           </h2>
-          {/* <ul className="worker__list list">
-            <li className="list__item">
-              <Link to="/" className="list__link list__link_active">
-                Наемным сотрудникам
-              </Link>
-            </li>
-            <li className="list__item">
-              <Link to="/businessman" className="list__link">
-                Предпринимателям и владельцам бизнеса
-              </Link>
-            </li>
-            <li className="list__item">
-              <Link to="/firstProject" className="list__link">
-                Тем, для кого это первый бизнес проект
-              </Link>
-            </li>
-            <li className="list__item">
-              <Link to="/specialist" className="list__link">
-                Специалистам смежных профессий
-              </Link>
-            </li>
-          </ul> */}
           <Routes>
             <Route exact path="/" element={<Worker />} />
             <Route exact path="/businessman" element={<Businessman />} />

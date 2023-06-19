@@ -100,3 +100,39 @@
   color: #1299A2;
   border-bottom: 1px solid #1299A1;
 }
+
+.provider__tariffs {
+  color: white;
+  padding: 47px 205px 221px;
+  background-image: url(../assets/tariffsBack.png);
+  height: 319px;
+  margin-bottom: 132px;
+}
+
+.tariffs__text {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 130%;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.tariffs__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.tariffs__type {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 38px;
+  border-bottom: 1px dashed #FFFFFF;
+}
+
+.tariffs__type:hover {
+  color: #FFFFFF;
+}

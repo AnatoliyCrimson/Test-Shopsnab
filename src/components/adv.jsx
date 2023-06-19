@@ -15,9 +15,9 @@ const Adv = () => {
             </p>
           </div>
           <div className="advert__info">
-            <h2 className='advert__title'>
+            <p className='advert__title'>
               Весь февраль скидка 20% на все Тарифы! 
-            </h2>
+            </p>
             <p className='advert__descr'>
               Самый полезный и актуальный подарок! Начните год с новым Бизнесом!
             </p>

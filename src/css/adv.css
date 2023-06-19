@@ -28,8 +28,10 @@
 
 .advert__title {
   width: 537px;
-  font-size: 28px;
   margin-bottom: 3px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 36px;
 }
 
 .advert__info {
@@ -41,4 +43,9 @@
 .advert__btn {
   border: 1px solid #fff;
   padding: 10px 50px;
+}
+
+.advert__btn:hover {
+  color: #8C50B5;
+  background-color: white;
 }
