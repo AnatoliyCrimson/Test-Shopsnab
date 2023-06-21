@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom'
 import './css/global.css'
 import './css/App.css'
@@ -15,7 +15,6 @@ import Footer from './components/footer';
 import QuestionsForm from './components/questionsForm';
 import BusinessFor from './components/businessFor';
 import Questions from './components/questions';
-
 function App() {
   return (
     <>

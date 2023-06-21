@@ -1,6 +1,7 @@
 import React from 'react'
 import '../css/header.css'
 import Logo from '../assets/logo.svg'
+import Burger from '../assets/header-vector.svg'
 
 const Header = () => {
   return (
@@ -12,7 +13,7 @@ const Header = () => {
               <img src={Logo} alt="Лого" className="header__img" />
             </a>
             <a href="/" className='header__burger'>
-              Все магазины
+              <img src={Burger} alt="" />
             </a>
           </div>
           <a href="tel:+78005670009" className='number header__number'>
