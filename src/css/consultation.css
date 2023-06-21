@@ -1,0 +1,37 @@
+.consultation__content {
+  width: 429px;
+  height: 518px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 57px;
+  background-color: white;
+  border-radius: 7px;
+}
+
+.consultation__img {
+  margin-bottom: 37px;
+}
+
+.consultation__title {
+  font-size: 25px;
+  line-height: 40px;
+  padding-bottom: 17px;
+  text-align: center;
+}
+
+.consultation__text {
+  text-align: center;
+  margin-bottom: 41px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.7);
+}

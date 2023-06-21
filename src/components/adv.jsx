@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../css/adv.css'
+import TermsAdv from '../modal/termsAdv';
 
 const Adv = () => {
+  const [modalActive, setModalActive] = useState ()
   return (
     <>
       <section className='advert'>
@@ -22,11 +24,12 @@ const Adv = () => {
               Самый полезный и актуальный подарок! Начните год с новым Бизнесом!
             </p>
           </div>
-          <a href="/" className='btn advert__btn'>
+          <button className='btn advert__btn' onClick={() => setModalActive(true)} >
             Условия акции
-          </a>
+          </button>
         </div>
       </section>
+      <TermsAdv active={modalActive} setActive={setModalActive} />
     </>
   )
 }

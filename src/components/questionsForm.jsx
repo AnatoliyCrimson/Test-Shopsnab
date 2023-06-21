@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../css/questionsForm.css'
+import Consultation from '../modal/consultation'
 
 const QuestionsForm = () => {
+  const [modalActive, setModalActive] = useState ()
   return (
     <>
       <section className="questionsForm">
@@ -39,9 +41,9 @@ const QuestionsForm = () => {
               <form action="https://jsonplaceholder.typicode.com/posts" className="middle__form" method='POST'>
                 <input type="text" name="First-Name" className="middle__input" placeholder='Имя' required/>
                 <input type="text" name="Last-Name" className="middle__input" placeholder='Фамилия' required/>
-                <input type="tel" name="Phone" className="middle__input" placeholder='+7 (000) 000-00-00' required/>
+                <input type="number" name="Phone" className="middle__input" placeholder='+7 (000) 000-00-00' required/>
                 <input type="email" name="E-mail" className="middle__input" placeholder='E-mail' required/>
-                <button type="submit" className="form__btn middle__btn">Оплатить тариф</button>
+                <button type="submit" className="form__btn middle__btn" onClick={() => setModalActive(true)}>Оплатить тариф</button>
               </form>
               <p className="middle__policy-agreement">
                 Нажимая кнопку, принимаю условия <a href="/" className="middle__policy">политики</a> и <a href="/" className="middle__agreement">пользовательского соглашения</a>
@@ -78,6 +80,7 @@ const QuestionsForm = () => {
           </div>
         </div>
       </section>
+      <Consultation active={modalActive} setActive={setModalActive} />
     </>
   )
 }

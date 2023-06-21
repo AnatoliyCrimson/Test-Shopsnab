@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../css/hero.css'
+import ProfitCalculation from '../modal/profitСalculation';
 
 const Hero = () => {
+  const [modalActive, setModalActive] = useState ()
   return (
     <>
       <section className='hero'>
@@ -27,9 +29,9 @@ const Hero = () => {
               <a href="/" className='btn hero__btn hero__btn_opacity'>
                 Онлайн-демо магазина
               </a>
-              <a href="/" className='btn hero__btn'>
+              <button className='btn hero__btn' onClick={() => setModalActive(true)}>
                 Расчет прибыли для вашего города
-              </a>
+              </button>
             </div>
           </div>
           <div className='hero__bottom'>
@@ -68,6 +70,7 @@ const Hero = () => {
           </div>
         </div>
       </section>
+      <ProfitCalculation active={modalActive} setActive={setModalActive} />
     </>
   )
 }

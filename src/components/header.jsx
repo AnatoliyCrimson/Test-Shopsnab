@@ -9,7 +9,7 @@ const Header = () => {
         <div className="container header__container">
           <div className="header__logo">
             <a href="/">
-              <img src={Logo} alt="Поставщик" className="header__img" />
+              <img src={Logo} alt="Лого" className="header__img" />
             </a>
             <a href="/" className='header__burger'>
               Все магазины

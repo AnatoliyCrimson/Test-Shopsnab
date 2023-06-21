@@ -79,6 +79,12 @@ img {
   max-width: 100%;
 }
 
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 body {
   margin: 0;
   font-family: "Neris";
@@ -264,4 +270,44 @@ body {
 .form__btn:hover {
   cursor: pointer;
   background-color: #FFCB14;
+}
+
+.btn-modal {
+  font-family: "Ubuntu";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: white;
+  background-color: #1299A1;
+  border: 1px solid #1299A1;
+  padding: 13px 0;
+  width: 200px;
+  text-align: center;
+}
+
+.modal {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.modal.active {
+  opacity: 1;
+  pointer-events: all;
 }
