@@ -1,5 +1,6 @@
 import React from 'react'
-import AccordItem from './accordion'
+import Accord from './accordion'
+//import 'bootstrap/dist/css/bootstrap.min.css'
 import '../css/questions.css'
 
 const Questions = () => {
@@ -10,7 +11,7 @@ const Questions = () => {
           <h2 className="title questions__title">
             Вопросы
           </h2>
-          <AccordItem />
+          <Accord />
         </div>
       </section>
     </>

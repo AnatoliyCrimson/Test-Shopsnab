@@ -1,10 +1,10 @@
-.accordion__text {
+.accordion__item {
   padding: 27px 36px;
   border: 1px solid rgba(0, 0, 0, 0.44);
   border-radius: 7px;
 }
 
-.accordion__text:not(:last-child) {
+.accordion__item:not(:last-child) {
   margin-bottom: 24px;
 }
 
@@ -36,7 +36,11 @@
   user-select: none;
 }
 
-.accordion__img:active {
+.accordion__img {
+  transition: all 0.2s ease-in-out;
+}
+
+.accordion__img-active {
   transform: rotate(180deg);
   transition: all 0.2s ease-in-out;
 }

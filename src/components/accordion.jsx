@@ -2,17 +2,18 @@ import React from 'react'
 import { Accordion, AccordionItem } from '@szhsin/react-accordion'
 import Vector from '../assets/vector.svg'
 import '../css/accordion.css'
-
+ 
 const AccordItem = () => {
+
   return (
     <>
       <Accordion transition transitionTimeout={300} className="accordion">
-        <AccordionItem className="accordion__text"
+        <AccordionItem className="accordion__item"
           header={
             <div className="accordion__button-content">
               Базовые принципы посадочных страниц
-              <img src={Vector} alt="Стрелка" className="accordion__img" />
-            </div>    
+              <img src={Vector} alt="Стрелка" className={`accordion__img`} />
+            </div>
           }>
           <div className="accordion__text-content">
             Вы изучите, как выстраивать взаимодействие с партнерами и инфопартнёрами, включая конкретные шаблоны сообщений. Как организовывать мероприятия: внутренние, регулярные, флагманские, фестивали и конференции. Как вовлекать сообщество в организацию.  Для чего нужен мерчендайзинг. Какие бывают типы монетизации.
@@ -20,12 +21,12 @@ const AccordItem = () => {
             Познакомимся с инструментами работы со СМИ.
           </div> 
         </AccordionItem>
-        <AccordionItem className="accordion__text"
+        <AccordionItem className="accordion__item"
           header={
             <div className="accordion__button-content">
               Базовые принципы посадочных страниц
-              <img src={Vector} alt="Стрелка" className="accordion__img" />
-            </div>    
+              <img src={Vector} alt="Стрелка" className={`accordion__img`} />
+            </div>
           }>
           <div className="accordion__text-content">
             Вы изучите, как выстраивать взаимодействие с партнерами и инфопартнёрами, включая конкретные шаблоны сообщений. Как организовывать мероприятия: внутренние, регулярные, флагманские, фестивали и конференции. Как вовлекать сообщество в организацию.  Для чего нужен мерчендайзинг. Какие бывают типы монетизации.
@@ -33,12 +34,12 @@ const AccordItem = () => {
             Познакомимся с инструментами работы со СМИ.
           </div> 
         </AccordionItem>
-        <AccordionItem className="accordion__text"
+        <AccordionItem className="accordion__item"
           header={
             <div className="accordion__button-content">
               Базовые принципы посадочных страниц
-              <img src={Vector} alt="Стрелка" className="accordion__img" />
-            </div>    
+              <img src={Vector} alt="Стрелка" className={`accordion__img`} />
+            </div>
           }>
           <div className="accordion__text-content">
             Вы изучите, как выстраивать взаимодействие с партнерами и инфопартнёрами, включая конкретные шаблоны сообщений. Как организовывать мероприятия: внутренние, регулярные, флагманские, фестивали и конференции. Как вовлекать сообщество в организацию.  Для чего нужен мерчендайзинг. Какие бывают типы монетизации.
@@ -46,12 +47,12 @@ const AccordItem = () => {
             Познакомимся с инструментами работы со СМИ.
           </div> 
         </AccordionItem>
-        <AccordionItem className="accordion__text"
+        <AccordionItem className="accordion__item"
           header={
             <div className="accordion__button-content">
               Базовые принципы посадочных страниц
-              <img src={Vector} alt="Стрелка" className="accordion__img" />
-            </div>    
+              <img src={Vector} alt="Стрелка" className={`accordion__img`} />
+            </div>
           }>
           <div className="accordion__text-content">
             Вы изучите, как выстраивать взаимодействие с партнерами и инфопартнёрами, включая конкретные шаблоны сообщений. Как организовывать мероприятия: внутренние, регулярные, флагманские, фестивали и конференции. Как вовлекать сообщество в организацию.  Для чего нужен мерчендайзинг. Какие бывают типы монетизации.
@@ -59,12 +60,12 @@ const AccordItem = () => {
             Познакомимся с инструментами работы со СМИ.
           </div> 
         </AccordionItem>
-        <AccordionItem className="accordion__text"
+        <AccordionItem className="accordion__item"
           header={
             <div className="accordion__button-content">
               Базовые принципы посадочных страниц
-              <img src={Vector} alt="Стрелка" className="accordion__img" />
-            </div>    
+              <img src={Vector} alt="Стрелка" className={`accordion__img`} />
+            </div>
           }>
           <div className="accordion__text-content">
             Вы изучите, как выстраивать взаимодействие с партнерами и инфопартнёрами, включая конкретные шаблоны сообщений. Как организовывать мероприятия: внутренние, регулярные, флагманские, фестивали и конференции. Как вовлекать сообщество в организацию.  Для чего нужен мерчендайзинг. Какие бывают типы монетизации.
