@@ -1,6 +1,6 @@
 .businessman__content {
   display: flex;
-  height: 357px;
+  min-height: 357px;
 }
 
 .businessman__text {
@@ -20,4 +20,19 @@
   font-size: 23px;
   line-height: 30px;
   color: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 425px) {
+  .businessman__content {
+    flex-direction: column;
+  }
+
+  .businessman__text {
+    width: 100%;
+    margin: 0 0 30px;
+  }
+
+  .businessman__title {
+    margin-bottom: 20px;
+  }
 }

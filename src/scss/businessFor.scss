@@ -31,3 +31,27 @@
   border-bottom: 2px solid #1299A2;
   padding-bottom: 11px;
 }
+
+@media (max-width: 425px) {
+  .business-for__container {
+  padding: 40px 20px;
+  }
+
+  .business-for__title {
+    margin-bottom: 25px;
+  }
+
+  .list {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .list__item {
+    height: 67px;
+  }
+
+  .list__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}

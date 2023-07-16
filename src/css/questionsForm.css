@@ -1,13 +1,13 @@
 .questionsForm-container {
   background-image: url(../assets/qustions-form-back.png);
-  height: 915px;
+  min-height: 915px;
   padding-top: 100px;
   color: white;
 }
 
 .questionsForm__title {
   line-height: 63px;
-  width: 806px;
+  max-width: 806px;
   margin-bottom: 68px;
 }
 
@@ -22,13 +22,6 @@
 
 .left, .right {
   width: 306px;
-}
-
-.middle {
-  width: 366px;
-  background-color: white;
-  border-radius: 7px;
-  padding: 55px 50px 0;
 }
 
 .left__price-info {
@@ -91,6 +84,13 @@
   line-height: 17px;
 }
 
+.middle {
+  width: 366px;
+  background-color: white;
+  border-radius: 7px;
+  padding: 55px 50px 49px;
+}
+
 .middle__input {
   border: 1px solid rgba(0, 0, 0, 0.32);
   border-radius: 7px;
@@ -116,7 +116,6 @@
   font-size: 13px;
   line-height: 15px;
   color: rgba(0, 0, 0, 0.5);
-  margin-bottom: 35px;
 }
 
 .middle__policy, .middle__agreement {
@@ -163,4 +162,33 @@
   font-size: 14px;
   line-height: 18px;
   color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 425px) {
+  .questionsForm-container {
+    padding: 40px 20px;
+    background-position: center;
+  }
+  .questionsForm__title {
+    margin-bottom: 20px;
+  }
+  .questionsForm__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: block;
+  }
+  .left {
+    margin: 0;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .middle {
+    width: 100%;
+    padding: 35px;
+  }
+  .right {
+    display: none;
+  }
 }

@@ -40,7 +40,7 @@
 }
 
 .provider__p-advantages {
-  width: 200px;
+  max-width: 200px;
 }
 
 .provider__heading {
@@ -103,10 +103,12 @@
 
 .provider__tariffs {
   color: white;
-  padding: 47px 205px 221px;
+  padding: 47px 205px;
   background-image: url(../assets/tariffsBack.png);
-  height: 319px;
+  background-position: center;
+  min-height: 319px;
   margin-bottom: 132px;
+  border-radius: 9px;
 }
 
 .tariffs__text {
@@ -135,4 +137,82 @@
 
 .tariffs__type:hover {
   color: #FFFFFF;
+}
+
+@media (max-width: 425px) {
+  .provider__container {
+    padding-top: 40px;
+  }
+  .provider__img {
+    display: none;
+  }
+  .provider__advantages {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .provider__text-container {
+    margin-bottom: 45px;
+  }
+  .provider__descr {
+    text-align: center;
+  }
+  .provider__advantages {
+    margin-bottom: 45px;
+  }
+  .provider__p-advantages {
+    width: 150px;
+  }
+  .provider__p-advantages:not(:last-child) {
+    margin-bottom: 25px;
+  }
+  .provider__profit-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 35px;
+  }
+  .provider__profit {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .provider__average-profit-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .provider__average-profit {
+    text-align: center;
+  }
+  .tariffs {
+    padding: 20px;
+    margin: 0;
+  }
+  .tariffs__text {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .tariffs__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .tariffs__item {
+    padding-bottom: 10px;
+  }
 }

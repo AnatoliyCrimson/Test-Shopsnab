@@ -52,3 +52,17 @@
 .szh-accordion__item-content {
   transition: height 0.3s ease-in-out;
 }
+
+@media (max-width: 425px) {
+  .accordion__item {
+    padding: 10px 20px;
+  }
+
+  .accordion__button-content {
+    text-align: left;
+  }
+
+  .accordion__text-content {
+    padding: 10px 0;
+  }
+}

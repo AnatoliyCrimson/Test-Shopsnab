@@ -4,6 +4,39 @@ import Consultation from '../modal/consultation'
 
 const QuestionsForm = () => {
   const [modalActive, setModalActive] = useState ()
+  
+  const [fname, setFname] = useState ('');
+
+  const fnameChange = event => {
+    const result = event.target.value.replace(/[^а-я]/gi, '');
+
+    setFname(result);
+  };
+
+  const [lname, setLname] = useState ('');
+
+  const lnameChange = event => {
+    const result = event.target.value.replace(/[^а-я]/gi, '');
+
+    setLname(result);
+  };
+
+  const [number, setNumber] = useState ('');
+
+  const numberChange = event => {
+    const result = event.target.value.replace(/[^0-9]/gi, '');
+
+    setNumber(result);
+  };
+
+  const [mail, setMail] = useState ('');
+
+  const mailChange = event => {
+    const result = event.target.value.replace(/[^a-z, @, .]/gi, '');
+
+    setMail(result);
+  };
+
   return (
     <>
       <section className="questionsForm">
@@ -39,10 +72,10 @@ const QuestionsForm = () => {
             </div>
             <div className="questionsForm__middle middle">
               <form action="https://jsonplaceholder.typicode.com/posts" className="middle__form" method='POST'>
-                <input type="text" name="First-Name" className="middle__input" placeholder='Имя' required/>
-                <input type="text" name="Last-Name" className="middle__input" placeholder='Фамилия' required/>
-                <input type="number" name="Phone" className="middle__input" placeholder='+7 (000) 000-00-00' required/>
-                <input type="email" name="E-mail" className="middle__input" placeholder='E-mail' required/>
+                <input type="text" value={fname} onChange={fnameChange} name="First-Name" className="middle__input" placeholder='Имя' required/>
+                <input type="text" value={lname} onChange={lnameChange} name="Last-Name" className="middle__input" placeholder='Фамилия' required/>
+                <input type="text" value={number} onChange={numberChange} name="Phone" className="middle__input" placeholder='+7 (000) 000-00-00' required/>
+                <input type="email" value={mail} onChange={mailChange} name="E-mail" className="middle__input" placeholder='E-mail' required/>
                 <button type="submit" className="form__btn middle__btn" onClick={() => setModalActive(true)}>Оплатить тариф</button>
               </form>
               <p className="middle__policy-agreement">

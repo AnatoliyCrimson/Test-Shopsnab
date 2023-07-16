@@ -22,3 +22,19 @@
   line-height: 30px;
   color: rgba(0, 0, 0, 0.7);
 }
+
+@media (max-width: 425px) {
+  .worker__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .worker__text {
+    width: 100%;
+    margin: 0 0 30px;
+  }
+  .worker__title {
+    margin-bottom: 20px;
+  }
+}

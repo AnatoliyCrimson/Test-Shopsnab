@@ -31,3 +31,39 @@
 .start-right__text, .start-left__text {
   width: 300px;
 }
+
+@media (max-width: 425px) {
+ .start__container {
+  padding: 40px 20px;
+ }
+
+ .start__title {
+  margin-bottom: 35px;
+ }
+
+ .start__info {
+  flex-direction: column;
+  margin-bottom: 35px;
+ }
+
+ .start__img {
+  margin: 15px 0;
+ }
+
+ .start-left__text, .start-right__text {
+  text-align: center;
+ }
+
+ .start-right {
+  width: 100%;
+ }
+
+ .start-right, .start-left {
+  flex-direction: column;
+  align-items: center;
+ }
+
+ .start-right__img, .start-left__img {
+  margin: 0;
+ }
+}

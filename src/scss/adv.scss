@@ -4,7 +4,7 @@
   justify-content: space-between;
   align-items: center;
   color: #fff;
-  height: 112px;
+  min-height: 112px;
 }
 
 .advert__value {
@@ -21,7 +21,7 @@
 }
 
 .advert__title {
-  width: 537px;
+  max-width: 537px;
   margin-bottom: 3px;
   font-weight: 600;
   font-size: 28px;
@@ -43,4 +43,30 @@
   color: #8C50B5;
   background-color: white;
   transition: all 0.2s ease-in-out;
+}
+
+@media (max-width: 425px) {
+  .advert__container {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 0;
+  }
+  
+  .advert__discount {
+    display: none;
+  }
+
+  .advert__info {
+    width: 325px;
+  }
+
+  .advert__title {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .advert__descr {
+    margin-bottom: 18px;
+    text-align: center;
+  }
 }

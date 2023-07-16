@@ -13,6 +13,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .pro-right, .pro-left {
@@ -30,4 +31,43 @@
 .pro-right__text, .pro-left__text {
   width: 300px;
   padding-top: 10px;
+}
+
+@media (max-width: 425px) {
+  .pro__container {
+    padding: 40px 20px;
+  }
+
+  .pro__title {
+    margin-bottom: 35px;
+  }
+
+  .pro-left, .pro-right {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .pro-left {
+    margin-bottom: 25px;
+  }
+
+  .pro-right__img, .pro-left__img {
+    margin: 0;
+  }
+
+  .pro-left__img {
+    width: 192px;
+    height: 187px;
+  }
+
+  .pro-right__img {
+    width: 146px;
+    height: 172px;
+  }
+
+  .pro-left__text, .pro-right__text {
+    width: 100%;
+    text-align: center;
+  }
 }

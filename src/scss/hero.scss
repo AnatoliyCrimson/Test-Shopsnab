@@ -14,25 +14,25 @@
 }
 
 .hero__btns {
-  width: 334px;
+  max-width: 334px;
 }
 
 .hero__descr {
-  width: 655px;
+  max-width: 655px;
   font-size: 20px;
 }
 
 .hero__btn {
   display: inline-block; 
   text-align: center;
-  width: 334px;
-  height: 58px;
-  padding: 15px 0;
+  max-width: 334px;
+  min-height: 58px;
+  padding: 15px 10px;
   border: 1px solid #1299A1;
 }
 
 .hero__btn_opacity {
-  margin-bottom: 25px;
+  margin-bottom: 25px;  
   background-color: #1299A2;
 }
 
@@ -66,4 +66,37 @@
   font-size: 20px;
   font-weight: 600;
   line-height: 32px;
+}
+
+@media (max-width: 425px) {
+  .hero__container {
+    padding-top: 40px;
+  }
+
+  .hero__top {
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  .hero__title {
+    margin-bottom: 35px;
+    text-align: left;
+  }
+
+  .hero__title-text {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+  .hero__btn {
+    width: 290px;
+  }
+
+  .hero__bottom {
+    display: none;
+  }
+
+  .hero__btn_opacity {
+    margin-bottom: 35px;  
+  }
 }

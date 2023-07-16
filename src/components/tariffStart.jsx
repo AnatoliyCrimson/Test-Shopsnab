@@ -1,7 +1,32 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../css/tariffStart.css'
 
 const TariffStart = () => {
+  
+  const [fname, setFname] = useState ('');
+
+  const fnameChange = event => {
+    const result = event.target.value.replace(/[^а-я]/gi, '');
+
+    setFname(result);
+  };
+
+  const [number, setNumber] = useState ('');
+
+  const numberChange = event => {
+    const result = event.target.value.replace(/[^0-9]/gi, '');
+
+    setNumber(result);
+  };
+
+  const [mail, setMail] = useState ('');
+
+  const mailChange = event => {
+    const result = event.target.value.replace(/[^a-z, @, .]/gi, '');
+
+    setMail(result);
+  };
+
   return (
     <>
       <section className='start' id="tariff-start">
@@ -54,9 +79,9 @@ const TariffStart = () => {
               </div>
             </div>
             <form action="https://jsonplaceholder.typicode.com/posts" className="start__form form" method="POST">
-              <input type="text" name="First-Name" className="form__input" placeholder="Имя" required />
-              <input type="tel" name="Phone" className="form__input" placeholder="+7 (000) 000-00-00" required />
-              <input type="e-mail" name="E-mail" className="form__input" placeholder="E-mail" required />
+              <input type="text" value={fname} onChange={fnameChange} name="First-Name" className="form__input" placeholder="Имя" required />
+              <input type="text" value={number} onChange={numberChange} name="Phone" className="form__input" placeholder="+7 (000) 000-00-00" required />
+              <input type="e-mail" value={mail} onChange={mailChange} name="E-mail" className="form__input" placeholder="E-mail" required />
               <button type="submit" className="form__btn">Отправить</button>
             </form>
           </div>

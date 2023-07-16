@@ -2,7 +2,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 357px;
+  min-height: 357px;
 }
 
 .first-project__text {
@@ -22,4 +22,20 @@
   font-size: 23px;
   line-height: 30px;
   color: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 425px) {
+  .first-project__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .first-project__text {
+    width: 100%;
+    margin: 0 0 30px;
+  }
+  .first-project__title {
+    margin-bottom: 20px;
+  }
 }

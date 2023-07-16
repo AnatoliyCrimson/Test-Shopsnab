@@ -62,5 +62,9 @@ const  = () => {
 
 export default ;
 
-
+@media (max-width: 425px) {
+  .container {
+    padding: 40px 20px;
+  }
+}
 */

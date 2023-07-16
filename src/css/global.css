@@ -93,7 +93,7 @@ body {
 }
 
 .header-hero-backgroung {
-  width: 1600px;
+  max-width: 1600px;
   height: 735px;
   margin-left: auto;
   margin-right: auto;
@@ -101,7 +101,7 @@ body {
 }
 
 .container {
-  width: 1600px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 215px;
@@ -129,21 +129,15 @@ body {
   line-height: 65px;
 }
 
-.container {
-  max-width: 1600px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 .form-info {
   color: white;
-  height: 258px;
+  min-height: 258px;
   background-color: #1299A2;
   border-radius: 7px;
 }
 
 .form-info__text {
-  padding: 35px 60px 0 53px;
+  padding: 35px 60px 27px 53px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -151,6 +145,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .form-info__title {
@@ -165,7 +161,6 @@ body {
   font-weight: 300;
   font-size: 28px;
   line-height: 37px;
-  margin-bottom: 27px;
 }
 
 .form-info__price {
@@ -196,7 +191,7 @@ body {
 }
 
 .form {
-  height: 104px;
+  min-height: 104px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -206,7 +201,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 58px;
+  padding: 25px 58px;
 }
 
 .form__input {
@@ -311,4 +306,37 @@ body {
 .modal.active {
   opacity: 1;
   pointer-events: all;
+}
+
+@media (max-width: 425px) {
+  .container {
+    padding: 40px 20px;
+  }
+  .header-hero-backgroung {
+    background-position-x: -300px;
+  }
+  .title {
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 50px;
+    text-align: center;
+  }
+  .form-info__descr {
+    margin: 0;
+  }
+  .form-info__text {
+    padding: 35px 20px 27px;
+  }
+  .form {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 25px 20px;
+  }
+  .form__input {
+    margin-bottom: 18px;
+    width: 100%;
+  }
+  .form__btn {
+    width: 100%;
+  }
 }

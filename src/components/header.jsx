@@ -12,8 +12,8 @@ const Header = () => {
             <a href="/">
               <img src={Logo} alt="Лого" className="header__img" />
             </a>
-            <a href="/" className='header__burger'>
-              <img src={Burger} alt="" />
+            <a href="/" >
+              <img src={Burger} alt="ВСЕ МАГАЗИНЫ" className='header__burger'/>
             </a>
           </div>
           <a href="tel:+78005670009" className='number header__number'>

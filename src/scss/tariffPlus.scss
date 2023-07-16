@@ -17,6 +17,7 @@
 
 .plus-right, .plus-left {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .plus-right__img, .plus-left__img {
@@ -29,4 +30,40 @@
 
 .plus-right__text, .plus-left__text {
   width: 300px;
+}
+
+@media (max-width: 425px) {
+  .plus__container {
+    padding: 40px 20px;
+   }
+  
+  .plus__title {
+    margin-bottom: 35px;
+  }
+
+  .plus__info {
+    flex-direction: column;
+    margin-bottom: 35px;
+  }
+
+  .plus__img {
+    margin: 15px 0;
+  }
+
+  .plus-left__text, .plus-right__text {
+    text-align: center;
+  }
+
+  .plus-right {
+    width: 100%;
+  }
+
+  .plus-right, .plus-left {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plus-right__img, .plus-left__img {
+    margin: 0;
+   }
 }

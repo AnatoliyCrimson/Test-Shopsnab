@@ -6,3 +6,9 @@
 .questions__title {
     margin-bottom: 89px;
 }
+
+@media (max-width: 425px) {
+    .questions__container {
+      padding: 40px 20px;
+    }
+  }
